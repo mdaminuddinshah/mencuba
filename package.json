@@ -1,0 +1,20 @@
+{
+  "name": "mencuba",
+  "version": "1.0.0",
+  "description": "mencuba lagi untuk memahami",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "Powershell.exe -Command\" $env:PGHOST='127.0.0.1'; $env:PGUSER='postgres'; $env:PGDATABASE='mencuba'; $env:PGPASSWORD='postgresql';\" node --watch index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aminuddin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5"
+  }
+}
